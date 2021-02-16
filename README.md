@@ -51,7 +51,43 @@ Execute below commend to open project in VSCode. You can open manually also.
 > cd <your-react-native-project-name>
 > code .
 ```
-> Set SDK location Path into `local.properties` file and save it into android folder
+### Set SDK Path
+Set SDK location Path into `local.properties` file and save it into android folder        
+Folder structure of `local.properties` file.
+```
+<root_folder>
+├── __test__
+|       └── ...
+|
+├── Android
+|   ├── .gradle
+|   ├── app
+|   ├── gradle
+|   ├── build.gradle
+|   ├── gradle.properties
+|   ├── gradlew
+|   ├── gradlew.bat
+|   ├── local.properties
+|   └── setting.gradle
+|
+├── iOS
+|   └── ...
+|
+├── node_modules
+|   └── ...
+|
+├── ...
+├── .gitignore
+├── app.js
+├── index.js
+├── package.json
+└── README.md
+
+```
+Code in `local.properties` file.
+```
+sdk.dir=D\:\\Android\\SDK
+```
 ### Run on Android
 Execute below commend to run the project. Make sure an emulator is open, or a physical android device attached before running. Again it will take some time to download all dependency and build project. Once it's done it will automatically launch the app in the emulator/device.
 ```CLI
